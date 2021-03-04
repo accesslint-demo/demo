@@ -1,0 +1,87 @@
+<img src="logo.png" />
+
+<html>
+<div aria-role="main">
+<h1 tabindex="1">Hello world</h1>
+<img src="logo.png" />
+<span role="img"></span>
+<%= image_tag "logo.png" %>
+<select><option>1</option></select>
+<label for="dupe">Dupe</label>
+<label for="dupe">Another</label>
+<input id="dupe" type="text" />
+</div>
+<input type="search" />
+<button></button>
+
+<span role="alertdialog"></span>
+<span role="application"></span>
+<span role="button"></span>
+<span role="checkbox"></span>
+<span role="columnheader"></span>
+<span role="combobox"></span>
+<span role="dialog"></span>
+<span role="grid"></span>
+<span role="heading"></span>
+<span role="legend"></span>
+<span role="link"></span>
+<span role="listbox"></span>
+<span role="meter"></span>
+<span role="menuitem"></span>
+<span role="menuitemcheckbox"></span>
+<span role="menuitemradio"></span>
+<span role="option"></span>
+<span role="progressbar"></span>
+<span role="radio"></span>
+<span role="radiogroup"></span>
+<span role="rowheader"></span>
+<span role="searchbox"></span>
+<span role="slider"></span>
+<span role="spinbutton"></span>
+<span role="switch"></span>
+<span role="tabpanel"></span>
+<span role="textbox"></span>
+<span role="tooltip"></span>
+<span role="tree"></span>
+<span role="treegrid"></span>
+<span role="treeitem"></span>
+
+<table>
+  <th></th>
+  <tr></tr>
+</table>
+
+
+<!-- no errors -->
+<!-- allow unlabelled sections -->
+<section><h1>foo</h1></section>
+<section aria-labelledby="foo"><h1 id="foo">foo</h1></section>
+
+
+<button>{{ something }}</button>
+<link rel="icon" href="favicon.ico" type="image/x-icon" />
+
+<input type="hidden" />
+
+<button hidden></button>
+<button aria-hidden="true"></button>
+<span role="button" style="display: none;"></span>
+<span role="button" style="visibility: hidden;"></span>
+
+<input aria-label="fine" type="text" />
+<input aria-labelledby="fine" type="text" />
+<label for="fine">Another</label>
+<input id="fine" type="text" />
+<label>
+  Another
+  <textarea />
+</label>
+<img src="logo.png" alt="Acme, Inc." />
+<img src="logo.png" title="Acme Inc." />
+<img src="logo.png" aria-label="Acme Inc." />
+<img src="logo.png" aria-labelledby="fine" />
+<img src="logo.png" role="presentation" />
+<img src="logo.png" role="none" />
+<%= image_tag "logo.png", alt: "" %>
+<%= image_tag "logo.png", alt: "Acme, inc." %>
+</html>
